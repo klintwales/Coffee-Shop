@@ -22,3 +22,9 @@ code {
 .justify-content-start{
   padding-left: 20px;
 }
+
+footer{
+  padding-left: 20rem;
+  padding-right: 20rem;
+  background-color: #D7FDEC;
+}

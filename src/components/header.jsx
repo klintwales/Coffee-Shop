@@ -1,7 +1,7 @@
 function Header(){
   return(
 <div className="header">
-    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 shadow-lg border-bottom" style={{marginBottom: "0px"}}>
 
       <a href="/" className="col-3 justify-content-start text-dark text-decoration-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bug" viewBox="0 0 16 16">
@@ -11,6 +11,7 @@ function Header(){
 
       <ul className="nav col-6 justify-content-center">
         <li><a href="#" className="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" className="nav-link px-2 link-dark">Menu</a></li>
         <li><a href="#" className="nav-link px-2 link-dark">About</a></li>
         <li><a href="#" className="nav-link px-2 link-dark">Shop</a></li>
       </ul>
