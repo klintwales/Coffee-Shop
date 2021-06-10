@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Header(){
   return(
 <div className="header">
@@ -10,10 +12,10 @@ function Header(){
       </a>
 
       <ul className="nav col-6 justify-content-center">
-        <li><a href="#" className="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" className="nav-link px-2 link-dark">Menu</a></li>
-        <li><a href="#" className="nav-link px-2 link-dark">About</a></li>
-        <li><a href="#" className="nav-link px-2 link-dark">Shop</a></li>
+        <li><Link to="/" className="nav-link px-2 link-secondary">Home</Link></li>
+        <li><Link to="/Menu" className="nav-link px-2 link-dark">Menu</Link></li>
+        <li><Link href="#" className="nav-link px-2 link-dark">About</Link></li>
+        <li><Link href="#" className="nav-link px-2 link-dark">Shop</Link></li>
       </ul>
 
       <div className="col-3 text-end">
@@ -35,3 +37,7 @@ function Header(){
 );}
 
 export default Header;
+
+
+    //  <Link to="/about">About Us </Link>
+    //  <Link to="/shop">Shop Now </Link>
