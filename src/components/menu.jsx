@@ -1,14 +1,15 @@
 import React from 'react';
+import MenuItem from './menuItem.jsx';
 import coffee from "../assets/coffee.jpg"
 
 
 
 function Menu(){
   return(
-    <div>
-    {/*had to add the ratio and ratio-16x9 (instead of embed-responsive-16by9 noted in the bootstrap documentation) in the enclosing div in order for the video to render correctly */}
+    <div className="p-3 pb-md-4 mx-auto text-center">
+      <h1 className="display-4 fw-normal"> Menu </h1>
       <div className="embed-responsive ratio ratio-16x9">
-        <h1> Menu </h1>
+        <MenuItem/>
       </div>
     </div>
   )
