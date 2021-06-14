@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MenuItem(){
+function MenuItem(props){
   return(
     <div>
       <div className="embed-responsive ratio ratio-16x9">
@@ -8,10 +8,10 @@ function MenuItem(){
           <div className="col">
             <div className="card mb-4 rounded-3 shadow-sm">
               <div className="card-header py-3">
-                <h4 className="my-0 fw-normal">Latte</h4>
+                <h4 className="my-0 fw-normal">{props.itemName}</h4>
               </div>
               <div className="card-body">
-              <h1 className="card-title pricing-card-title">5.99</h1>
+              <h1 className="card-title pricing-card-title">{props.itemPrice}</h1>
               </div>
             </div>
           </div>
