@@ -2,11 +2,8 @@ import React from 'react';
 
 function MenuItem(props){
   return(
-    <div>
-      <div className="embed-responsive ratio ratio-16x9">
-        <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div className="col">
-            <div className="card mb-4 rounded-3 shadow-sm">
+            <div className="col-md-4">
+            <div className="card mb-4 rounded-3 shadow-sm" style={{padding:"0px", margin:"0px"}}>
               <div className="card-header py-3">
                 <h4 className="my-0 fw-normal">{props.itemName}</h4>
               </div>
@@ -14,10 +11,7 @@ function MenuItem(props){
               <h1 className="card-title pricing-card-title">{props.itemPrice}</h1>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>
   )
 }
 
