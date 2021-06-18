@@ -28,3 +28,8 @@ footer{
   padding-right: 15%;
   background-color: #D7FDEC;
 }
+
+#MenuTitle{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
