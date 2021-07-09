@@ -5,7 +5,7 @@ import React from 'react';
 function Cart(){
   return(
     <div>
-      <h1>Shopping Cart</h1>
+      <h1 style={{marginTop:"1%"}}>Shopping Cart</h1>
         <div>
           <br/>
           <br/>
