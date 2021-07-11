@@ -7,6 +7,8 @@ import Cart from './components/cart.jsx'
 import Footer from './components/footer.jsx'
 import Menu from './components/menu.jsx'
 
+console.log(window.shoppingCart);
+
 function App() {
   return (
     <div>
