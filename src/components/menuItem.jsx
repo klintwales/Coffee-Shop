@@ -9,11 +9,15 @@ function MenuItem(props){
               </div>
               <div className="card-body">
               <h1 className="card-title pricing-card-title">{props.itemPrice}</h1>
-              <button class="w-100 btn btn-lg btn-primary" type="button" style={{marginTop:"100px"}}>Add to Cart</button>
+              <button class="w-100 btn btn-lg btn-primary" type="button" style={{marginTop:"100px"}} onClick={ () => addToCart(props)}>Add to Cart</button>
               </div>
             </div>
             </div>
   )
+}
+
+function addToCart(props){
+  window.shoppingCart.push({"item": props.itemName, "price": props.itemPrice});
 }
 
 export default MenuItem;

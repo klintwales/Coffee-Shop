@@ -5,8 +5,7 @@ import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //using "window" makes shopping cart a global variable
-window.shoppingCart = new Map();
-window.shoppingCart.set(0, 'Latte');
+window.shoppingCart = [];
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
