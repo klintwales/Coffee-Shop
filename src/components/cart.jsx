@@ -11,9 +11,18 @@ function Cart(){
           <br/>
           <br/>
           <h2>Items</h2>
-            <div>
-            <CartItem/>
-            </div>
+          <br/>
+          <div>
+            {window.shoppingCart.map((item) => {
+              return(
+                <CartItem
+                key={item.index}
+                itemName={item.item}
+                itemPrice={item.price}
+                />
+              )
+            })}
+          </div>
         </div>
     </div>
 
