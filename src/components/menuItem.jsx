@@ -8,7 +8,7 @@ function MenuItem(props){
                 <h4 className="my-0 fw-normal">{props.itemName}</h4>
               </div>
               <div className="card-body">
-              <h1 className="card-title pricing-card-title">{props.itemPrice}</h1>
+              <h1 className="card-title pricing-card-title">${props.itemPrice}</h1>
               <button class="w-100 btn btn-lg btn-primary" type="button" style={{marginTop:"100px"}} onClick={ () => addToCart(props)}>Add to Cart</button>
               </div>
             </div>
