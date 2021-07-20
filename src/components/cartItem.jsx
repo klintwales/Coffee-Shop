@@ -3,6 +3,7 @@ import cat from "../assets/cat.jpg";
 
 function CartItem(props){
   return(
+
     <div class="row" style={{marginBottom:"1%"}}>
         <img class="picture col-1" style={{marginLeft:"2%"}} src={cat}></img>
         <div class="discription col-6">
@@ -23,9 +24,5 @@ function CartItem(props){
   )
 }
 
-function removeFromCart(props){
-console.log("removeFromCart");
-props.onDelete(props.id);
-};
 
 export default CartItem;
