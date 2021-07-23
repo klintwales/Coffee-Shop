@@ -35,14 +35,14 @@ function removeItemFromArray(props){
 
 //Creates cart item for each item in window.shoppingCart
   return(
-    <div>
+    <div style={{marginBottom:"1%"}}>
       <h1 style={{marginTop:"1%"}}>Shopping Cart</h1>
         <div>
           <br/>
           <br/>
           <h2>Items</h2>
-          <br/>
-          <div>
+          <div class="col-8">
+          <hr style={{marginRight:"-12px"}}/>
             {items.map((newItem, index) => {
               return(
                 <CartItem
@@ -55,6 +55,11 @@ function removeItemFromArray(props){
               )
             })}
           </div>
+          <row style={{textAlign:"right"}}>
+          <div class="col-8">
+          <a href="" class="btn btn-primary btn-lg px-4" style={{marginTop:"1%"}}>Check Out</a>
+          </div>
+          </row>
         </div>
     </div>
 

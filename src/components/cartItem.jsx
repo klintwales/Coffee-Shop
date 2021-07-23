@@ -5,12 +5,12 @@ function CartItem(props){
   return(
 
     <div class="row" style={{marginBottom:"1%"}}>
-        <img class="picture col-1" style={{marginLeft:"2%"}} src={cat}></img>
-        <div class="discription col-6">
+        <img class="picture col-2" style={{marginLeft:"2%"}} src={cat}></img>
+        <div class="discription col-8">
           <h2>{props.itemName}</h2>
           <p>This is where the menu item list will go</p>
         </div>
-        <div class="row price col-1 w-1">
+        <div class="row price col-2 w-1">
         <h3 class="h-25" style={{textAlign:"right"}}>${props.itemPrice}</h3>
         <div class="h-75">
         <rect x="0" y="0" onClick={ () => props.onDelete(props)}>
@@ -20,6 +20,7 @@ function CartItem(props){
         </rect>
         </div>
         </div>
+        <hr style={{marginTop:"1%"}}/>
     </div>
   )
 }
