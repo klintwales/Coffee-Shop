@@ -41,8 +41,8 @@ function removeItemFromArray(props){
           <br/>
           <br/>
           <h2>Items</h2>
-          <br/>
-          <div>
+          <div class="col-8">
+          <hr style={{marginRight:"-12px"}}/>
             {items.map((newItem, index) => {
               return(
                 <CartItem
@@ -57,7 +57,7 @@ function removeItemFromArray(props){
           </div>
           <row style={{textAlign:"right"}}>
           <div class="col-8">
-          <a href="" class="btn btn-primary btn-lg px-4">Check Out</a>
+          <a href="" class="btn btn-primary btn-lg px-4" style={{marginTop:"1%"}}>Check Out</a>
           </div>
           </row>
         </div>
