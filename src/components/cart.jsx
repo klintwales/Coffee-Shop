@@ -27,13 +27,20 @@ function removeItemFromArray(props){
   console.log(newArray);
   window.shoppingCart = newArray;
   return (newArray);
+}
 
+function subtotal(items){
+  let total = 0;
+  window.shoppingCart.forEach((item) => {
+      total += item.price;
+  });
+
+  return (total);
 }
 
 
 
 
-//Creates cart item for each item in window.shoppingCart
   return(
     <div style={{marginBottom:"1%"}}>
       <h1 style={{marginTop:"1%"}}>Shopping Cart</h1>
@@ -43,6 +50,7 @@ function removeItemFromArray(props){
           <h2>Items</h2>
           <div class="col-8">
           <hr style={{marginRight:"-12px"}}/>
+          {/*Creates cart item for each item in window.shoppingCart*/}
             {items.map((newItem, index) => {
               return(
                 <CartItem
@@ -55,6 +63,22 @@ function removeItemFromArray(props){
               )
             })}
           </div>
+
+          <div class="row" style={{marginBottom:"1%"}}>
+              <div class="discription col-8">
+              </div>
+              <div class="row price col-2 w-1">
+                <div class="h-75">
+                </div>
+              </div>
+          </div>
+          {/*Subtotal section*/}
+          <row style={{textAlign:"right"}}>
+          <div class="col-8">
+          <h3>Subtotal  ${subtotal(items)}</h3>
+          </div>
+          </row>
+          {/*Checout button section*/}
           <row style={{textAlign:"right"}}>
           <div class="col-8">
           <a href="" class="btn btn-primary btn-lg px-4" style={{marginTop:"1%"}}>Check Out</a>
