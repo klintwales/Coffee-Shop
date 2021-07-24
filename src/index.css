@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  background-color: #D7FDEC;
+}
+
+.text-end{
+  padding-right: 20px;
+}
+.justify-content-start{
+  padding-left: 20px;
+}
+
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #D7FDEC;
+}
+
+#MenuTitle{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

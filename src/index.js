@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//using "window" makes shopping cart a global variable
+window.shoppingCart = [];
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
