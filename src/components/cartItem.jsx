@@ -8,7 +8,7 @@ function CartItem(props){
         <img class="picture col-2" style={{marginLeft:"2%"}} src={cat}></img>
         <div class="discription col-8">
           <h2>{props.itemName}</h2>
-          <p>This is where the menu item list will go</p>
+          <p>This is where the menu item list description will go</p>
         </div>
         <div class="row price col-2 w-1">
         <h3 class="h-25" style={{textAlign:"right"}}>${props.itemPrice}</h3>
