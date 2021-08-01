@@ -43,11 +43,11 @@ function subtotal(items){
 
   return(
     <div style={{marginBottom:"1%"}}>
-      <h1 style={{marginTop:"1%"}}>Shopping Cart</h1>
+      <h1 style={{marginTop:"1%", paddingLeft:".5%"}}>Shopping Cart</h1>
         <div>
           <br/>
           <br/>
-          <h2>Items</h2>
+          <h2 style={{paddingLeft:"1%"}}>Items</h2>
           <div class="col-8">
           <hr style={{marginRight:"-12px"}}/>
           {/*Creates cart item for each item in window.shoppingCart*/}
