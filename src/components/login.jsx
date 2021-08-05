@@ -2,32 +2,38 @@ import React from 'react';
 
 function Login(){
   return(
-    <row>
 <article class="card-body">
-<h4 class="card-title mb-4 mt-1">Log in</h4>
-<form>
-    <div class="form-group">
-    	<label>Your email</label>
-        <input name="" class="form-control" placeholder="Email" type="email"/>
-    </div>
-    <div class="form-group">
-    	<a class="float-right" href="#">Forgot?</a>
-    	<label>Your password</label>
-        <input class="form-control" placeholder="******" type="password"/>
-    </div>
-    <div class="form-group">
-      <div class="checkbox">
-        <label> <input type="checkbox"/> Save password </label>
+  <h4 class="card-title mb-4 mt-1">Log in</h4>
+    <div class="container col-4">
+      <div class="row mb-4 mx-auto">
+        <form>
+            <div class="form-group">
+            	<label>Your email</label>
+                <input name="" class="form-control" placeholder="Email" type="email"/>
+            </div>
+            <br/>
+            <div class="form-group">
+            	<label>Your password</label>
+                <input class="form-control" placeholder="******" type="password"/>
+                <a class="float-right" href="#">Forgot your password</a>
+            </div>
+            <br/>
+            <div class="form-group">
+              <div class="checkbox">
+                <label> <input type="checkbox"/> Save password </label>
+              </div>
+            </div>
+              <div class="form-group">
+                <div class="row align-content-center mx-auto d-flex justify-content-center">
+                  <button type="submit" class="btn btn-primary btn-block col-4 align-self-center d-flex justify-content-center"> Login  </button>
+                <a href="" class="float-right btn btn-outline-primary col-4 align-self-center d-flex justify-content-center">Sign up</a>
+                </div>
+              </div>
+        </form>
       </div>
     </div>
-      <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-block"> Login  </button>
-        <a href="" class="float-right btn btn-outline-primary">Sign up</a>
-      </div>
-
-</form>
 </article>
-</row>
+
 )};
 
 export default Login;
