@@ -3,7 +3,7 @@ import React from 'react';
 function Login(){
   return(
 <article class="card-body">
-  <h4 class="card-title mb-4 mt-1">Log in</h4>
+  <h4 class="card-title mb-4 mt-1" style={{textAlign:"center"}}>Log in</h4>
     <div class="container col-4">
       <div class="row mb-4 mx-auto">
         <form>
