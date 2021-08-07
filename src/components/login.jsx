@@ -23,10 +23,10 @@ function Login(){
                 <label> <input type="checkbox"/> Save password </label>
               </div>
             </div>
-              <div class="form-group">
+              <div class="container form-group">
                 <div class="row align-content-center mx-auto d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary btn-block col-4 align-self-center d-flex justify-content-center"> Login  </button>
-                <a href="" class="float-right btn btn-outline-primary col-4 align-self-center d-flex justify-content-center">Sign up</a>
+                  <button type="submit" class="btn btn-primary btn-block col-4 align-self-center d-flex justify-content-center" style={{marginRight:"1%"}}> Login  </button>
+                <a href="" class="float-right btn btn-outline-primary col-4 align-self-center d-flex justify-content-center" style={{marginLeft:"1%"}}>Sign up</a>
                 </div>
               </div>
         </form>
