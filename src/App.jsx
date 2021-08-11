@@ -4,6 +4,7 @@ import Header from './components/header.jsx'
 import HomePage from './components/homePage.jsx'
 import Cart from './components/cart.jsx'
 import Login from './components/login.jsx'
+import Shop from './components/shop.jsx'
 
 import Footer from './components/footer.jsx'
 import Menu from './components/menu.jsx'
@@ -20,6 +21,7 @@ function App() {
     <Route path="/menu" exact component={() => <Menu />}/>
     <Route path="/cart" exact component={() => <Cart />}/>
     <Route path="/login" exact component={() => <Login />}/>
+    <Route path="/shop" exact component={() => <Shop />}/>
     </Switch>
     <Footer />
     </Router>

@@ -14,8 +14,8 @@ function Header(){
       <ul className="nav col-6 justify-content-center">
         <li><Link to="/" className="nav-link px-2 link-secondary">Home</Link></li>
         <li><Link to="/Menu" className="nav-link px-2 link-dark">Menu</Link></li>
-        <li><Link href="#" className="nav-link px-2 link-dark">About</Link></li>
-        <li><Link href="#" className="nav-link px-2 link-dark">Shop</Link></li>
+        <li><Link href="/Shop" className="nav-link px-2 link-dark">About</Link></li>
+        <li><Link href="/shop" className="nav-link px-2 link-dark">Shop</Link></li>
       </ul>
 
       <div className="col-3 text-end">

@@ -4,7 +4,7 @@ import CartItem from "./cartItem.jsx";
 
 function Cart(){
 
-const [items, removeItem] = useState(window.shoppingCart)
+const [items, removeItem] = useState(window.shoppingCart);
 
 //Called by the cartItem onClick
 function deleteItem(props){
